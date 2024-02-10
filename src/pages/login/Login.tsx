@@ -112,7 +112,7 @@ const Login = () => {
             <Controller
               name="username"
               control={control}
-              defaultValue=""
+              defaultValue="sunil@gmail.com"
               rules={{
                 required: "Email is required",
                 pattern: {
@@ -149,7 +149,7 @@ const Login = () => {
             <Controller
               name="password"
               control={control}
-              defaultValue=""
+              defaultValue="Sunil@123"
               rules={{
                 required: "Password is required",
                 pattern: {
