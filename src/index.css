@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  overflow-y: scroll;
+  /* font-family: "Montserrat", sans-serif; */
+}
+
+@layer utilities {
+  @variants responsive {
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  }
+}
+.spinner {
+  font-size: 24px; /* Adjust the font size as needed */
+  color: #333; /* Set the color of the spinner */
+}
+
+input:-webkit-autofill {
+  background-color: "inherit"; /* Add the color you want */
+}
+
+/* Style the endAdornment when the input is focused */
+input:focus + .endAdornment {
+  background-color: "inherit";
+}
+
+/* Ensure that the IconButton has a class for easy selection */
+.endAdornment {
+  display: flex;
+  align-items: center;
+  padding-right: 8px; /* Adjust as needed */
+}
+.toastify-progress-bar {
+  /* Your custom styles here */
+  /* Change the background color */
+  /* Adjust the height */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #bbbbbb;
+  /* border-radius: 2px; */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #bbbbbb;
+}
+body {
+  box-sizing: border-box;
+  height: "100vh";
+}
